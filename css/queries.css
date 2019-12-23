@@ -1,0 +1,446 @@
+ .back-up-pc{
+     display: block;
+ }
+ .only-sp{
+    display: none;
+    width: 100%;
+    height: 53px;
+    background: #3c3d41;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+#reponsive{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.slide-sp{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    display: block;
+    z-index: 2;
+}
+.dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease-in;
+}
+.dot-active {
+    background-color: #717171;
+}
+.info-title{
+    width: 100%;
+    display: none;
+}
+.info{
+    position: relative;
+}
+/* menu-top-moblie */
+.menu-top-sp{
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 5px 0;
+}
+.menu-top-sp a{
+    color: #000;
+}
+.menu-top-sp a:hover{
+    color: #000;
+}
+.menu-top-sp a i{
+    font-size: 25px;
+}
+.menu-top-sp .menu-mobile{
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+.menu-top-sp .icon-menu-moblie{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid #DFDFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+ @media only screen and (max-width:1200px){
+    .thongbao{
+        display: none;
+    }   
+    .notifi{
+        display: none;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .back-up-pc{
+        display: none;
+    }
+    .only-pc{
+        display: none!important;
+    }
+    .reponsive{
+        display: block;
+    }
+    .only-sp{
+        display: block!important;
+    }
+    .nav-container{
+        display: none;
+    }
+    .mobile-nav-icon{
+        display: block;
+    }
+    .main-container{
+        margin-top: 0px;
+    }
+    .panel{
+        flex-direction: column;
+    }
+    .panel-left{
+        width: 100%;
+    }
+    .main-container .panel .panel-right{
+        flex-direction: row;
+        margin-left: 0;
+    }
+    .panel-left-bottom{
+        display: none;
+    }
+    .panel .panel-right .panel-right-top,.panel .panel-right .panel-right-bottom{
+        margin-top: 0;
+    }
+    /* .slide-sp{
+        display: block;
+    } */
+    .menu-top-sp{
+        display: block;
+    }
+    .section-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .section-header .section-header-list-left h2 {
+        display: flex;
+        padding-left: 15px;
+        background: none;
+    }
+    .section-header .section-header-list-right {
+        width: 100%;
+        background: #fff;
+    }
+    .products-container .cols.cols-5 .col-category{
+        width: 25%;
+    } 
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next{
+        display: none;
+    }
+    .panel .panel-left .panel-left-top{
+        display: none;
+    }
+    .panel-left-top-sp{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .section-header .section-header-list-left{
+        width: 100%;
+    }
+    .col-category .products-img .giam-percent {
+        width: 42px;
+        height: 42px;
+    }
+    .products-img .giam-percent .txt-giam-percent{
+        font-size: 11px;
+    }
+    .col-category .products-img .sticker,.sticker-hotsale{
+        width: 42px;
+        height: 42px;
+    }
+    .col-category .products-img .tra-gop{
+        width: 60px;
+    }
+    .col-category .products-img .txt-tra-gop{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:768px){
+    .section-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .products-container .cols.cols-5 .col-category{
+        width: 33.3%;
+    }
+    .section-header .section-header-list-left{
+        width: 100%;
+    }
+    .section-header .section-header-list-left h2 {
+        display: flex;
+        padding-left: 15px;
+        background: none;
+        font-size: 15px;
+    }
+    .section-header .section-header-list-right {
+        width: 100%;
+        background: #fff;
+    }
+    .section-header .section-header-list-right .right-list {
+        padding-left: 15px;
+    }
+    .section-header-list-right .right-list a{
+        margin: 3px 3px;
+        font-size: 0.8125em;
+        width: auto;
+    }
+    .section-header{
+        width: 100%;
+    }
+    .col-category .products-img .tra-gop{
+        width: 60px;
+        height: 20px;
+    }
+    .col-category .products-promotion .coupon-price{
+        width: 64%;
+    }
+    .col-category .products-img .giam-percent{
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+    .footer-ads{
+        display: none;
+    }
+    .footer-info .cols-4{
+        flex-wrap: wrap;
+    }
+    .footer-info .cols-4 > div{
+        width: 50%;
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .cols-4 div:nth-last-child(1){
+        order: 2;
+        background: #eee;
+    }
+    .cols-4 div:nth-last-child(2){
+        order: 1;
+        background: #eee;
+    }
+    .cols-4 div:nth-last-child(3){
+        order: 4;
+        background: none;
+        /* width: 50%; */
+    }
+    .cols-4 div:nth-last-child(4){
+        order: 3;
+        background: none;
+        /* width: 50%; */
+    }
+    .img a img{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:576px){
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    .menu-top-sp a{
+        font-size: 11px;
+    }
+    .products-container .cols.cols-5 .col-category{
+        width: 50%;
+    }
+    .col-category .products-img .giam-percent {
+        width: 33px;
+        height: 33px;
+    }
+    .products-img .giam-percent .txt-giam-percent{
+        font-size: 10px;
+    }
+    .col-category .products-img .sticker img, .sticker-hotsale img{
+        width: 40px;
+        height: auto;
+    }
+    .footer{
+        background: none;
+    }
+    .footer-info .cols-4 div a{
+        font-size: 15px;
+    }
+    .footer-info .cols-4 > div{
+        width: 100%;
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .cols-4 div:nth-last-child(3){
+        order: 4;
+        background: none;
+        width: 50%;
+    }
+    .cols-4 div:nth-last-child(4){
+        order: 3;
+        background: none;
+        width: 50%;
+    }
+    .footer-info{
+        border-bottom: 5px solid rgb(19, 183, 229);
+    }
+}
+@media only screen and (max-width:425px){
+    .col-category .products-img .giam-percent {
+        width: 30px;
+        height: 30px;
+    }
+    .products-img .giam-percent .txt-giam-percent{
+        font-size: 9px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .col-category .products-img .sticker img,.sticker-hotsale img{
+        width: 35px;
+        height: auto;
+    }
+    .col-category .products-img .sticker{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+    .col-category .products-img .tra-gop{
+        width: 48px;
+        height: 20px;
+    }
+    .col-category .products-img .txt-tra-gop{
+        font-size: 9px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .col-category .products-info .price-box .price{
+        font-size: 10px;
+    }
+    .products-promotion .promotion-list .pmh-title{
+        font-size: 10px;
+    }
+    .products-promotion .promotion-list .pmh-content {
+        font-size: 8px;
+    }
+    .col-category .products-promotion .coupon-price{
+        width: 73%;
+        font-size: 11px;
+    }
+    .footer-container .diachi{
+        padding: 0 6px;
+    }
+    .footer-info .cols-4 div a{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:375px){
+    .col-category .products-img .giam-percent {
+        width: 30px;
+        height: 30px;
+    }
+    .products-img .giam-percent .txt-giam-percent{
+        font-size: 9px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .col-category .products-img .sticker img,.sticker-hotsale img{
+        width: 35px;
+        height: auto;
+    }
+    .col-category .products-img .sticker{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+    .col-category .products-img .tra-gop{
+        width: 50px;
+        height: 20px;
+        bottom: 0;
+        left: 15px;
+    }
+    .col-category .products-img .txt-tra-gop{
+        font-size: 9px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .col-category .products-info .price-box .price{
+        font-size: 10px;
+    }
+    .products-promotion .promotion-list .pmh-title{
+        font-size: 10px;
+    }
+    .products-promotion .promotion-list .pmh-content {
+        font-size: 8px;
+    }
+    .col-category .products-promotion .coupon-price{
+        width: 73%;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:320px){
+    .col-category .products-img .giam-percent {
+        width: 30px;
+        height: 30px;
+    }
+    .products-img .giam-percent .txt-giam-percent{
+        font-size: 9px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .col-category .products-img .sticker img,.sticker-hotsale img{
+        width: 30px;
+        height: auto;
+    }
+    .col-category .products-img .tra-gop{
+        width: 46px;
+        height: 15px;
+    }
+    .col-category .products-img .txt-tra-gop{
+        font-size: 8px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .col-category .products-info .price-box .price{
+        font-size: 10px;
+        width: 100%;
+    }
+    .products-promotion .promotion-list .pmh-title{
+        font-size: 10px;
+    }
+    .products-promotion .promotion-list .pmh-content {
+        font-size: 8px;
+    }
+    .col-category .products-promotion .coupon-price{
+        width: 73%;
+        font-size: 11px;
+    }
+    .footer-info .cols-4 > div{
+        width: 100%;
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .cols-4 div:nth-last-child(3){
+        order: 4;
+        background: none;
+        margin-top: -23px;
+    }
+    .cols-4 div:nth-last-child(4){
+        order: 3;
+        background: none;
+    }
+}
