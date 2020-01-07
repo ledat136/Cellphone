@@ -8,14 +8,6 @@ a{
 li{
     list-style: none;
 }
-.clear{
-    clear: both;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 .wrapper{
     width: 100%;
 }
@@ -196,7 +188,6 @@ body{
 .panel .panel-right .panel-right-top{
     width: 100%;
     height: 49%;
-    margin-top: 2%;
 }
 .panel .panel-right .panel-right-bottom{
     width: 100%;
@@ -205,10 +196,8 @@ body{
 }
 .panel .panel-left .panel-left-top{
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-bottom: 1px solid #ccc;
-    /* overflow: hidden; */
-    display: block;
 }
 .panel .panel-left .panel-left-bottom{
     width: 100%;
@@ -227,7 +216,7 @@ body{
     border-right: 1px solid #ccc;
     position: relative;
 }
-.panel-left-bottom .panel-left-list li span{
+.panel-left-bottom .panel-left-list li .icon-sp{
     position: absolute;
     width: 100%;
     top: -12px;
@@ -268,7 +257,10 @@ body{
     background: #e11b1e;
     color: #fff;
 }
-
+.panel-left-bottom .panel-left-list .active{
+    background: #e11b1e;
+    display: block;
+}
 /* **********SALE************ */
 .main-container .sale{
     margin-top: 10px;
@@ -574,7 +566,6 @@ body{
     border: 1px solid #ccc;
     background-color: #e11b1e;
 }
-
 .back-top{
     position: fixed;
     bottom: 46%;

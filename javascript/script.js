@@ -43,18 +43,18 @@ $('.mobile-nav-icon').click(
 )
 
 //resize image//
-var carousel = $('.panel-left');
-var carouseltxt = $('.panel-left-top');
-carouselInit();
+// var carousel = $('.panel-left');
+// var carouseltxt = $('.panel-left-top');
+// carouselInit();
 
-$(window).on('load resize', function () {
-  carouselInit();
-});
-function carouselInit() {
-  var mWidth = carousel.width();
-  var mHeight = mWidth / 2.665;
-  carouseltxt.height(mHeight);
-}
+// $(window).on('load resize', function () {
+//   carouselInit();
+// });
+// function carouselInit() {
+//   var mWidth = carousel.width();
+//   var mHeight = mWidth / 2.665;
+//   carouseltxt.height(mHeight);
+// }
 
 
 $(document).ready(function () {
@@ -74,12 +74,12 @@ $(document).ready(function () {
     items: 1,
     autoplay: true,
     autoplaySpeed: 2500,
+    lazyLoad:true,
     loop: true,
     dots: true,
     nav: true,
     navText: ["<img src='./img/icon_pre.png'>", "<img src='./img/icon_next.png'>"],
     dotsContainer: '.panel-left-list',
-    autoplaySpeed: 2000,
   });
   $('.list-item-txt').on('click', function (e) {
     owl.trigger('to.owl.carousel', [$(this).index(), 300]);
